@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Videos (kept locally, not pushed)
+images/*.mp4
