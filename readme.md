@@ -161,3 +161,87 @@ The final packing achieves the following:
 ## Conclusion
 
 This assignment demonstrates two complementary aspects of three-dimensional computational geometry: geometric measurement through oriented bounding boxes and constrained spatial planning through heuristic-based bin packing. The implemented solutions emphasize correctness, deterministic behavior, and maintainable software design while satisfying all functional requirements of the assignment.
+
+# Running the Project
+
+## Clone the Repository
+
+Clone the repository to your local machine.
+
+```bash
+git clone https://github.com/Arun04Hack/computer-vision-ai-assignment.git
+cd computer-vision-ai-assignment
+```
+
+## Install Dependencies
+
+Create a virtual environment (recommended) and install the required dependency.
+
+```bash
+python -m venv venv
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install the required package:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Running Part 1 – 3D Oriented Bounding Box
+
+Navigate to the task_1 directory.
+
+```bash
+cd task_1
+```
+
+The implementation accepts the mesh file as a command-line argument, allowing different input models to be processed without modifying the source code.
+
+### Minimal OBB
+
+```bash
+python main.py data/CUBE.obj data/CYLINDER.obj data/TEAPOT.obj
+```
+
+### Visualize
+
+```bash
+python main.py data/CUBE.obj data/CYLINDER.obj data/TEAPOT.obj -v
+python main.py data/CUBE.obj data/CYLINDER.obj data/TEAPOT.obj --visualize
+```
+
+### Compare PCA and Minimal
+
+```bash
+python main.py data/CUBE.obj data/CYLINDER.obj data/TEAPOT.obj --compare
+python main.py data/CUBE.obj data/CYLINDER.obj data/TEAPOT.obj -c
+```
+---
+
+# Running Part 2 – 3D Bin Packing
+
+Navigate to the task_2 directory.
+
+```bash
+cd task_2
+```
+
+Run the packing script by providing the item list as a command-line argument.
+
+```bash
+python main.py Item_List.json
+```
